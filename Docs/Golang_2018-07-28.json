@@ -1,0 +1,363 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-07-27T22:35:15.365Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"created": 1532356026655,
+			"description": "",
+			"modified": 1532356026655,
+			"name": "Golang",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_14bbebd570e1409eb16f4b2873bc435f",
+			"color": null,
+			"created": 1532356026699,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1532356026699,
+			"name": "New Environment",
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_94b6554cb2e6476ea1c2fdda6de4a050",
+			"cookies": [
+				{
+					"creation": "2018-07-25T07:08:36.993Z",
+					"domain": "digiboxgh.com",
+					"expires": "2018-07-25T09:08:36.000Z",
+					"hostOnly": true,
+					"id": "949470677687531",
+					"key": "XSRF-TOKEN",
+					"lastAccessed": "2018-07-25T07:08:36.993Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6Ik9FYzlKYVF4V09rdXF2NnU2dlJieHc9PSIsInZhbHVlIjoialF0aG1NRm84Snp2d0V4dWozTjF0RmRUYWVMYUVJbUFsXC9PZ2NEREFaWVptdGRWTDBEd1l0OTY4MHExM2ozdFJFQ1NQeXBUb3oyS1ZHdERXUVwvYnMyUT09IiwibWFjIjoiMDhjNDMwMjFiOTBmYzdhNDJlN2ExYWE0Njg2MDdiZjQzZmYyMzQwMzAzOGM0NzIwZWEzNzA2M2RjZWUwMWZhZCJ9"
+				},
+				{
+					"creation": "2018-07-25T07:08:36.994Z",
+					"domain": "digiboxgh.com",
+					"expires": "2018-07-25T09:08:36.000Z",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "8622726039676765",
+					"key": "laravel_session",
+					"lastAccessed": "2018-07-25T07:08:36.994Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6IlAzXC9QUXlKMFd0U0lWM0JwcnNOYkZRPT0iLCJ2YWx1ZSI6IjMwSVpoS1VvMkQyQk0zUldHOEl6VnZKd1FOR3VMNXRKSU1XSDY4RmtMaGhQS0Z1RWlTZmhJMHllVDlDXC9CVkdWbWNTQ2YzYytDekFwTzZ0ajZTZXhUZz09IiwibWFjIjoiNjIzZDI1MmE0MTg3YzJmNmI3NjVlMmE5ZTY1YWZmZDI4MjlmZmQ2YTUxZmRhMjYxZmZhOGFlNjViNmQwZjJjYyJ9"
+				}
+			],
+			"created": 1532356026701,
+			"modified": 1532502516997,
+			"name": "Default Jar",
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_933d96f376094b89a35cf23034c9de9b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{ \n  \"username\": \"deved\",\n\t\"email\": \"hello@att.net\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1532356318967,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_674cff2a70954347a45dc05e51d8c5e8",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532356318967,
+			"method": "POST",
+			"modified": 1532470946803,
+			"name": "Register",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d3215e11e65849dd97f9f21fe9af8687",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"hello@att.net\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1532462282727,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_dd9405d98c504e37b04793ec1aef02ba",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_bd1b6c252edd4468b885f1575a68c652",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532462282727,
+			"method": "POST",
+			"modified": 1532527181476,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f0ff48c4e9554430bf31e331f846d57f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"record\": 5\n}"
+			},
+			"created": 1532609998595,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_166226311692421cac8b46607ab4b326",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				},
+				{
+					"id": "pair_8d8d8631bcab467f9ac927c03738f69a",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532609998595,
+			"method": "POST",
+			"modified": 1532618677665,
+			"name": "Create Record",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/create/record",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e42db248057542c7a282a5855fc44eb8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"record\":22,\n  \"operation\": \"multi\" \n}"
+			},
+			"created": 1532628899428,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9e12c76f777f4cfb98a8c244e3535b88",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_43a2d8ff716248888615e12fa37f88aa",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532628899428,
+			"method": "POST",
+			"modified": 1532726588850,
+			"name": "Update Record (Math)",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/update/record/b1457ffc-e2f9-4253-ab10-23aeb60d2bc2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c8166e7c7ed841549ae3cdfa5d7bcbee",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1532638617240,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8dcc7fa674bc4453bbc7373ac564b382",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_21fae7d4b84b49c7a49069866d086c0b",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532638617240,
+			"method": "PUT",
+			"modified": 1532639293245,
+			"name": "Freeze Record",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/update/record/freeze/fac7745e-5f8c-4c7d-878b-0201b9538ce7",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2df5d25429b24e49a9e29fa471b328f6",
+			"authentication": {},
+			"body": {},
+			"created": 1532640817099,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a7228d34c0b3442bae87a9def09429fe",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532640817099,
+			"method": "GET",
+			"modified": 1532640859391,
+			"name": "Get All Records",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/get/records",
+			"_type": "request"
+		},
+		{
+			"_id": "req_909f14caa1fc409da5c31a2f27595238",
+			"authentication": {},
+			"body": {},
+			"created": 1532723202053,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_87934afc674d4e7d8913059e28cea98b",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532723202053,
+			"method": "GET",
+			"modified": 1532725631557,
+			"name": "Get Record History",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/get/record/history/1432ddff-7ea2-4c88-978d-46bdfb331e02",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b22a45deafcc4cb085720adcf0dc869d",
+			"authentication": {},
+			"body": {},
+			"created": 1532726207432,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6f53e466b6f94fb3a256b49bb793bbbf",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				},
+				{
+					"id": "pair_455d04a790054cb28c59d0bee97629f1",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532726207432,
+			"method": "DELETE",
+			"modified": 1532726254135,
+			"name": "Delete Record ",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/delete/record/1432ddff-7ea2-4c88-978d-46bdfb331e02",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d8e7087a348f4ae0a1fc0de27de9f6a4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"step\": 1\n}"
+			},
+			"created": 1532727196195,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b87f5de131546519998ac579c7c56d4",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_c2e432d3e0b34394a5cd2cf655c62b20",
+					"name": "authorization",
+					"value": "JDJhJDEwJEgwRWx3a0dvL29ObTlCdHAyNURyby5BbzduZkdGb29oQmthVVh0d2V2eHE4bi9LRm51dGIy"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532727196195,
+			"method": "POST",
+			"modified": 1532729488114,
+			"name": "Record Rollback",
+			"parameters": [],
+			"parentId": "wrk_5a13fbd60dd94f7cb04b8d3de73ccbd3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:8080/api/v1/update/record/rollback/b1457ffc-e2f9-4253-ab10-23aeb60d2bc2",
+			"_type": "request"
+		}
+	]
+}

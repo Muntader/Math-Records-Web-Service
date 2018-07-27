@@ -47,6 +47,11 @@ type RecordHistory []GetRecordHistroy
 
 var value rune
 
+func OpenDB() *sql.DB {
+	db, _ := sql.Open("mysql", DB_USER+":"+DB_PASS+"@tcp("+DB_HOST+":"+DB_PORT+")/"+DB_NAME+"?parseTime=true")
+	return db
+}
+
 func CreateRecord(w http.ResponseWriter, r *http.Request) {
 
 	// Set request

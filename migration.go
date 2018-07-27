@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"log"
 	"net/http"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -15,20 +14,14 @@ const DB_NAME = "golang"
 const DB_USER = "phpmyadmin"
 const DB_PASS = "123456"
 
-func OpenDB() *sql.DB {
-
-	db, _ := sql.Open("mysql", DB_USER+":"+DB_PASS+"@tcp("+DB_HOST+":"+DB_PORT+")/"+DB_NAME+"?parseTime=true")
-
-	return db
-}
-
 func CreateDatabse(w http.ResponseWriter, r *http.Request) {
 
 	// Connect
 	db, err := sql.Open("mysql", DB_USER+":"+DB_PASS+"@tcp("+DB_HOST+":"+DB_PORT+")/"+DB_NAME)
 	if err != nil {
-		log.Fatal(err)
-	} else {
+		fmt.Fprintf(w, err.Error())
+		return
+	} else {git commit -m "First Go Project"
 		fmt.Println("Connect")
 	}
 
@@ -37,7 +30,8 @@ func CreateDatabse(w http.ResponseWriter, r *http.Request) {
 	// Create User Table
 	_, err = db.Exec("CREATE TABLE `users` (`id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL, `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL, `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL, `created_at` timestamp NULL DEFAULT NULL) CHARSET=utf8mb4;")
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(w, "NOT FOUND")
+		return
 	} else {
 		fmt.Println("Successful migrate users table")
 

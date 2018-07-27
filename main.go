@@ -24,7 +24,7 @@ func handleRequest() {
 	router.Handle("/api/v1/update/record/rollback/{id}", MiddlewareAuth(http.HandlerFunc(RollBackRecord))).Methods("POST")
 
 	// Basic middleware
-	http.ListenAndServe(":8080", router)
+	http.ListenAndServe(":80", router)
 }
 
 func main() {
